@@ -1,0 +1,166 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.content {
+  max-width: 1300px;
+  margin: auto;
+  background:White;
+  padding: 10px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 45px;  /*1420*/
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.header {
+  padding: 10px;
+    background-color:Gainsboro;
+  color:black;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+</style>
+<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="content">
+<head><img src="Capture3.png"  width="100%"></head><br>
+<div 
+<hr>
+<b><marquee hieght="100%" width="100%" behavior="alternate" bgcolor="lightgoldenrodyellow">COLLEGE TRANSPORT SYSTEM</marquee></b>
+<hr>
+</div>
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="file:\\\C:\Users\Hp-user\Desktop\html\project\instructions2.html">Instructions</a>
+  <a href="C:\Users\Hp-user\Desktop\html\project\fee2.html">Fee Structure</a>
+  <a href="C:\Users\Hp-user\Desktop\html\project\route2.html">Routes</a>
+  <a href="C:\Users\Hp-user\Desktop\html\project\register.html">Registrations</a>
+  <a href="C:\Users\Hp-user\Desktop\html\project\gallary2.html">Gallery</a>
+  <a href="C:\Users\Hp-user\Desktop\html\project\contact2.html">Contact Us</a>
+</div>
+<div class="header">
+<form>
+  <div class="container">
+    <h1>Contact Us </h1>   <hr>
+<b>Name</b>
+<input type="text" placeholder="enter name"  name="Name"><br><br>
+<b>Contact No</b>
+<input type="text" placeholder="enter Contact"  name="Contact No"><br><br>
+<b>Gender : </b><br>
+<input type="radio" name="gender" value="male">Male
+<br>
+<input type="radio" name="gender" value="female">       Female
+<br><br>
+<b>Select City</b><br>
+<select>
+<option>select city</option>
+<option>Chandigarh</option>
+<option>Mohali</option>
+<option>Zirkpur</option>
+<option>Panchkula</option>
+<option>Ambala</option>
+<option>Patiala</option>
+<option>Sirhind</option>
+<option>Fathegarh Sahib</option>
+<option>Gobindgarh</option>
+<option>Khanna</option>
+</select><br><br>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <button type="submit"  onclick="clickAlert()" class="registerbtn">submit</button>
+  </div>
+  <div class="container signin">
+  </div>
+</form>
+<script>
+  function clickAlert() {
+    alert("You will be contacted soon");
+}
+</script>
+</head>
+</html>

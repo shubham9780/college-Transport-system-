@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  top: 0.2%;
+  left: 0.2%;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.header {
+  padding: 10px;
+  text-align: center;
+
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="C:\Users\Hp-user\Desktop\html\project\back.jpg" alt="Notebook" style hieght="100%" width="100%">
+  <div class="content">
+   <div class="header">
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+ <p>Transportation is the center of the world! It is the glue of our daily lives</p>
+</div>
+
+<div class="mySlides fade">
+<p>Some beautiful paths can't be discovered without getting lost<p>
+</div>
+
+<div class="mySlides fade">
+<P>A plan is the transport medium which conveys a person from the station of dreams to the destination of success. Goals are the transport fees</p>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</div>
+  </div>
+</div>
+
+</body>
+</html>
